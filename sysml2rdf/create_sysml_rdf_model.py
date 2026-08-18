@@ -16,7 +16,6 @@ def create_reference(wrapper: GraphWrapper, rdf1, rdf2, association):
 
     print("XXX", association)
 
-
     if "aggregation" in association:
         aggregation = association["aggregation"]
         if aggregation == "composite":
