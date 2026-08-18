@@ -1,5 +1,7 @@
 #obse==1.2.0
 git+https://github.com/dfriedenberger/obse
 py_sysml_rdf==0.0.2
+#py_traceability_rdf==0.2.0
+git+https://github.com/TheOpenMMTLab/traceability-rdf-model.git@change/update-testcase-relations
 rdflib==6.2.0
 argparse==1.4.0
