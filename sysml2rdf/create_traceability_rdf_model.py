@@ -10,7 +10,7 @@ def create_design_element(wrapper, design_element, designType):
     rdf_id = wrapper.add_labeled_instance(Traceability.DesignElement, design_element["name"], design_element['traceability_id'])
     wrapper.add_str_property(Traceability.identifier, rdf_id, design_element["traceability_id"])
     wrapper.add_str_property(Traceability.designType, rdf_id, designType)
- 
+
     if "traceability_ref" in design_element:
         for ref in design_element["traceability_ref"]:
             rdf_ref = wrapper.create_ref(Traceability.Requirement, ref)
